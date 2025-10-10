@@ -43,7 +43,7 @@ export default function HomePage() {
                 كودي | مولّد رموز QR
               </Typography>
               <Typography variant="body1" color="text.secondary" mb={4}>
-                الصق رابطًا أدناه لإنشاء رمز QR الخاص بك فورًا.
+                الصق رابطًا أدناه لإنشاء رمز QR الخاص.
               </Typography>
 
               <TextField

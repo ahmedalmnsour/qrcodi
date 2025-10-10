@@ -3,6 +3,7 @@ import { createTheme } from '@mui/material/styles';
 
 // الثيم النهائي الموحد
 const theme = createTheme({
+  direction: 'rtl',
   palette: {
     mode: 'light',
     primary: {

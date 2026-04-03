@@ -2,6 +2,8 @@
 
 A fast, sleek, and modern QR code generator built with a focus on user experience and clean UI. 
 
+🔗 **Live Demo:** [www.qrcodi.me](https://www.qrcodi.me/)
+
 <p align="center">
   <img src="public/readme-assets/screenshot.png" alt="QRCodi Modern QR Code Generator" width="100%" />
 </p>

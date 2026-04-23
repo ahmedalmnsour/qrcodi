@@ -4,7 +4,6 @@ import { Box } from '@mui/material';
 import QrCodeIcon from '@mui/icons-material/QrCode';
 import QrCodeScannerIcon from '@mui/icons-material/QrCodeScanner';
 
-// مصفوفة تحتوي على بيانات الأيقونات التي سنعرضها
 const icons = [
   { Icon: QrCodeIcon, top: '10%', left: '5%', transform: 'rotate(-15deg)', fontSize: 120 },
   { Icon: QrCodeScannerIcon, top: '20%', left: '80%', transform: 'rotate(20deg)', fontSize: 180 },
@@ -16,28 +15,30 @@ const icons = [
 export default function BackgroundIcons() {
   return (
     <Box
+      aria-hidden="true"
       sx={{
-        position: 'fixed', // تثبيتها في الشاشة
+        position: 'fixed',
         top: 0,
         left: 0,
         width: '100%',
         height: '100%',
-        zIndex: -1, // أهم خاصية: لوضعها خلف كل المحتوى الآخر
-        overflow: 'hidden', // لإخفاء أي أجزاء تخرج عن الشاشة
+        zIndex: -1,
+        overflow: 'hidden',
+        pointerEvents: 'none',
       }}
     >
       {icons.map((item, index) => (
         <Box
           key={index}
-          component={item.Icon} // نستخدم الأيقونة كمكون
+          component={item.Icon}
           sx={{
             position: 'absolute',
             top: item.top,
             left: item.left,
             fontSize: item.fontSize,
             transform: item.transform,
-            color: 'grey.200', // لون باهت جدًا
-            opacity: 0.5,      // شفافية عالية
+            color: 'grey.200',
+            opacity: 0.5,
           }}
         />
       ))}

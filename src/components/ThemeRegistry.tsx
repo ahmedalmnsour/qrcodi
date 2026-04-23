@@ -7,14 +7,14 @@ import CssBaseline from '@mui/material/CssBaseline';
 import theme from './theme';
 import React from 'react';
 import { prefixer } from 'stylis';
-import rtlPlugin from 'stylis-plugin-rtl'; // <-- 1. استيراد إضافة RTL
+import rtlPlugin from 'stylis-plugin-rtl';
 
 export default function ThemeRegistry({ children }: { children: React.ReactNode }) {
   const [{ cache, flush }] = React.useState(() => {
-    // 2. تعديل إعدادات الكاش لدعم RTL
+  
     const cache = createCache({
       key: 'mui-style',
-      stylisPlugins: [prefixer, rtlPlugin], // <-- 3. استخدام الإضافة هنا
+      stylisPlugins: [prefixer, rtlPlugin],
     });
     cache.compat = true;
     const prevInsert = cache.insert;

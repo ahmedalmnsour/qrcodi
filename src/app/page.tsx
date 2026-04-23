@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useRef } from 'react';
-import { Container, Box, Typography, Card, CardContent, TextField, Button } from '@mui/material';
+import { Container, Box, Typography, Card, CardContent, TextField, Button, Link } from '@mui/material';
 import { QRCodeCanvas } from 'qrcode.react';
 import QrCode2Icon from '@mui/icons-material/QrCode2';
 import BackgroundIcons from '@/components/BackgroundIcons';
@@ -40,10 +40,10 @@ export default function HomePage() {
               <QrCode2Icon sx={{ fontSize: 80, color: 'primary.main', mb: 2 }} />
 
               <Typography variant="h5" component="h1" gutterBottom>
-                كودي | مولّد رموز QR
+               كودي | مُولِّد QR
               </Typography>
               <Typography variant="body1" color="text.secondary" mb={4}>
-                الصق رابطًا أدناه لإنشاء رمز QR الخاص.
+               الصق الرابط أدناه لإنشاء الرمز الخاص.
               </Typography>
 
               <TextField
@@ -54,25 +54,20 @@ export default function HomePage() {
                 onChange={(e) => setUrl(e.target.value)}
               />
 
-              {url && (
+              {url.trim() && (
                 <Box sx={{ mt: 4, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 2 }}>
                   <div ref={qrRef}>
                     <QRCodeCanvas
-                      value={url} size={256} bgColor={"#ffffff"}
-                      fgColor={"#000000"} level={"L"} includeMargin={true}
+                      value={url.trim()} size={256} bgColor={"#ffffff"}
+                      fgColor={"#000000"} level={"L"} marginSize={4}
                     />
                   </div>
                   
-                  {/* الزر النهائي باللون الرصاصي المخصص */}
+                  
                   <Button
                     variant="contained"
+                    color="primary"
                     onClick={downloadQRCode}
-                    sx={{
-                      backgroundColor: '#757575', // اللون الرصاصي
-                      '&:hover': {
-                        backgroundColor: '#616161', // درجة أغمق عند مرور الماوس
-                      },
-                    }}
                   >
                     تحميل الرمز
                   </Button>
@@ -82,7 +77,16 @@ export default function HomePage() {
           </Card>
 
           <Typography variant="body2" color="text.secondary" align="center" sx={{ mt: 4 }}>
-            © {new Date().getFullYear()} كودي | تصميم وبرمجة أحمد المنصور
+            © {new Date().getFullYear()} كودي | تصميم وبرمجة{' '}
+            <Link
+              href="https://ahmed.almnsour.net"
+              target="_blank"
+              rel="noopener noreferrer"
+              color="inherit"
+              underline="hover"
+            >
+              أحمد المنصور
+            </Link>
           </Typography>
         </Box>
       </Container>

@@ -1,17 +1,25 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import ThemeRegistry from "@/components/ThemeRegistry";
-import { Poppins } from 'next/font/google'; // <-- 1. استوردنا الخط هنا
+import { Cairo } from 'next/font/google';
 
-// 2. قمنا بإعداد الخط هنا
-const poppins = Poppins({
-  weight: ['300', '400', '500', '700'],
-  subsets: ['latin'],
+
+const cairo = Cairo({
+  weight: ['400', '700'],
+  subsets: ['arabic', 'latin'],
   display: 'swap',
 });
 
 export const metadata: Metadata = {
-  title: "Codi - كودي",
-  description: "Your digital portal in a click",
+  metadataBase: new URL("https://www.qrcodi.me"),
+  title: "كودي QR",
+  description: "مُولِّد رموز QR بواجهة عربية.",
+  authors: [{ name: "أحمد المنصور", url: "https://ahmed.almnsour.net" }],
+  creator: "أحمد المنصور",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({
@@ -21,8 +29,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ar" dir="rtl">
-      {/* 3. طبقنا الخط على كامل الجسم باستخدام className */}
-      <body className={poppins.className}> 
+      <body className={cairo.className}>
         <ThemeRegistry>
           {children}
         </ThemeRegistry>

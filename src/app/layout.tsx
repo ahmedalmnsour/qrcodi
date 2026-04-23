@@ -12,9 +12,31 @@ const cairo = Cairo({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.qrcodi.me"),
   title: "كودي QR",
-  description: "مُولِّد رموز QR بواجهة عربية.",
+  description: "مُولِّد رموز QR بواجهة عربية.",
   authors: [{ name: "أحمد المنصور", url: "https://ahmed.almnsour.net" }],
   creator: "أحمد المنصور",
+  openGraph: {
+    title: "كودي QR",
+    description: "مُولِّد رموز QR بواجهة عربية.",
+    url: "https://www.qrcodi.me",
+    siteName: "كودي",
+    locale: "ar_KW",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "كودي — مُولِّد رموز QR بواجهة عربية",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "كودي QR",
+    description: "مُولِّد رموز QR بواجهة عربية.",
+    images: ["/og-image.png"],
+  },
 };
 
 export const viewport: Viewport = {

@@ -28,7 +28,7 @@ export default function HomePage() {
   return (
     <>
       <BackgroundIcons />
-      <Container maxWidth="md">
+      <Container maxWidth="md" component="main">
         <Box
           sx={{
             minHeight: '100vh', display: 'flex', flexDirection: 'column',
@@ -64,10 +64,11 @@ export default function HomePage() {
                   </div>
                   
                   
-                  <Button
-                    variant="contained"
-                    color="primary"
+                  <Button 
+                    variant="contained" 
+                    color="primary" 
                     onClick={downloadQRCode}
+                    aria-label="تحميل رمز QR المولَّد كصورة PNG"
                   >
                     تحميل الرمز
                   </Button>

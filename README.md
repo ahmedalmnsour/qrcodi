@@ -1,29 +1,72 @@
-# 📱 QRCodi - Modern QR Code Generator
+# كودي QR
 
-A fast, sleek, and modern QR code generator built with a focus on user experience and clean UI. 
+مُولِّد رموز QR بواجهة عربية.
 
-🔗 **Live Demo:** [www.qrcodi.me](https://www.qrcodi.me/)
+![Next.js](https://img.shields.io/badge/Next.js-16-000?logo=nextdotjs)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)
+![MUI](https://img.shields.io/badge/MUI-7-007FFF?logo=mui&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-<p align="center">
-  <img src="public/readme-assets/screenshot.png" alt="QRCodi Modern QR Code Generator" width="100%" />
-</p>
+![كودي QR](./public/readme-assets/mockup.png)
 
-## ✨ Features
-* **Modern UI/UX:** Built with Material UI for a polished look.
-* **Fully Responsive:** Works seamlessly on desktop and mobile.
-* **RTL Support:** Perfectly aligned text and layouts for Arabic and other right-to-left languages.
-* **Lightning Fast:** Powered by Next.js and optimized for speed.
+**[🔗 الموقع المباشر](https://www.qrcodi.me)** — **[موقع المطوّر](https://ahmed.almnsour.net)**
 
-## 🛠 Tech Stack
-* **Framework:** [Next.js](https://nextjs.org/)
-* **Language:** TypeScript
-* **Styling & Components:** Material UI (MUI)
-* **Deployment:** Vercel
+---
 
-## 🚀 Getting Started locally
+## الميزات
 
-To get a local copy up and running, follow these simple steps:
+- واجهة عربية ودعم كامل للغة العربية (RTL).
+- تصميم متجاوب على الحاسوب والجوال.
+- تحميل الرمز كصورة PNG.
+- بدون تتبّع، بدون إعلانات، بدون تسجيل.
 
-1. Clone the repo
-   ```sh
-   git clone https://github.com/AhmedAlmnsour/qrcodi.git
+## التقنيات
+
+Next.js · TypeScript · Material UI · qrcode.react · Vercel
+
+## التشغيل المحلّي
+
+```bash
+git clone https://github.com/ahmedalmnsour/qrcodi.git
+cd qrcodi
+npm install
+npm run dev
+```
+
+افتح [http://localhost:3000](http://localhost:3000) في المتصفّح.
+
+## الترخيص
+
+[MIT](./LICENSE)
+
+---
+
+# Codi QR
+
+An Arabic-first QR code generator.
+
+## Features
+
+- Arabic-first UI with full RTL support
+- Responsive on desktop and mobile
+- Download as PNG
+- No tracking, no ads, no sign-up
+
+## Stack
+
+Next.js · TypeScript · Material UI · qrcode.react · Vercel
+
+## Run Locally
+
+```bash
+git clone https://github.com/ahmedalmnsour/qrcodi.git
+cd qrcodi
+npm install
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## License
+
+[MIT](./LICENSE)

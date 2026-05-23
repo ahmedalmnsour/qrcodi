@@ -1,4 +1,4 @@
-# كودي QR
+# كودي
 
 مُولِّد رموز QR بواجهة عربية.
 
@@ -7,7 +7,7 @@
 ![MUI](https://img.shields.io/badge/MUI-7-007FFF?logo=mui&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-![كودي QR](./public/readme-assets/mockup.png)
+![كودي](./public/readme-assets/mockup.png)
 
 **[🔗 الموقع المباشر](https://www.qrcodi.me)** — **[موقع المطوّر](https://ahmed.almnsour.net)**
 
@@ -20,9 +20,6 @@
 - تحميل الرمز كصورة PNG.
 - بدون تتبّع، بدون إعلانات، بدون تسجيل.
 
-## التقنيات
-
-Next.js · TypeScript · Material UI · qrcode.react · Vercel
 
 ## التشغيل المحلّي
 
@@ -35,38 +32,12 @@ npm run dev
 
 افتح [http://localhost:3000](http://localhost:3000) في المتصفّح.
 
-## الترخيص
+---
 
-[MIT](./LICENSE)
+**English:** QRCodi — an Arabic-first QR code generator. [Live demo](https://qrcodi.me)
 
 ---
 
-# Codi QR
-
-An Arabic-first QR code generator.
-
-## Features
-
-- Arabic-first UI with full RTL support
-- Responsive on desktop and mobile
-- Download as PNG
-- No tracking, no ads, no sign-up
-
-## Stack
-
-Next.js · TypeScript · Material UI · qrcode.react · Vercel
-
-## Run Locally
-
-```bash
-git clone https://github.com/ahmedalmnsour/qrcodi.git
-cd qrcodi
-npm install
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-## License
+## الترخيص
 
 [MIT](./LICENSE)

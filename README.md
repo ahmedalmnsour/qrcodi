@@ -1,6 +1,6 @@
 # كودي
 
-مُولِّد رموز QR بواجهة عربية.
+أداة عربية صغيرة لتوليد رموز QR، بُنيت بإتقان.
 
 ![Next.js](https://img.shields.io/badge/Next.js-16-000?logo=nextdotjs)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)

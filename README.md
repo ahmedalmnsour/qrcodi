@@ -21,7 +21,7 @@
 - بدون تتبّع، بدون إعلانات، بدون تسجيل.
 
 
-## التشغيل المحلّي
+## للتشغيل المحلّي
 
 ```bash
 git clone https://github.com/ahmedalmnsour/qrcodi.git
